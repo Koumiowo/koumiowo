@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>酷米 Koumiowo</title>
-<meta name="description" content="酷米 Koumiowo 的個人網站——一個對電腦、軟硬體、各種資訊科技都很有興趣的學生，還藏了幾個不太乖的整人小巧思。">
+<meta name="description" content="酷米 Koumiowo，所以你還不點連結到底要幹啥！！">
 <link rel="icon" id="favicon" href="data:,">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -713,22 +713,13 @@
     document.getElementById('navToggleIcon').textContent = 'menu';
   }));
 
-  /* ---------- status pill + Discord live sync (Lanyard) ----------
-     這段用 Lanyard（https://github.com/Phineas/lanyard）這個公開服務
-     來抓即時 Discord 狀態，不需要自己架 bot。
-     啟用方式：
-       1. 用 Discord 帳號加入 Lanyard 的伺服器：https://discord.gg/lanyard
-       2. 加入之後 Lanyard 就會開始記錄這個帳號的線上狀態
-       3. 不需要改任何程式碼，下面的 fetch 會自動抓到資料
-     沒加入的話 fetch 會失敗，畫面就會顯示「尚未同步」的提示文字，
-     並自動退回手動點擊循環的假狀態（不會壞掉，只是變成整人版）。
-  ---------------------------------------------------------------- */
+
   const DISCORD_ID = '888986529979052053';
   const statusStates = [
-    { text: '潛水中', cls: 'idle' },
-    { text: '偷偷上線', cls: 'online' },
-    { text: '裝忙中', cls: 'busy' },
-    { text: '其實在發呆', cls: 'offline' }
+    { text: '咕嚕咕嚕', cls: 'idle' },
+    { text: '蝦！！', cls: 'online' },
+    { text: '很忙的', cls: 'busy' },
+    { text: '呆...', cls: 'offline' }
   ];
   let statusIdx = 0;
   let liveMode = false;
@@ -740,10 +731,10 @@
   }
   function applyLiveStatus(discordStatus) {
     const map = {
-      online: { text: 'Discord 在線上', cls: 'online' },
-      idle: { text: 'Discord 閒置中', cls: 'busy' },
-      dnd: { text: '請勿打擾', cls: 'offline' },
-      offline: { text: 'Discord 離線中', cls: 'idle' }
+      online: { text: '尼好啊', cls: 'online' },
+      idle: { text: 'AFK！沒看到阿', cls: 'busy' },
+      dnd: { text: '叫你不要吵我了，生氣！', cls: 'offline' },
+      offline: { text: '咕嚕咕嚕', cls: 'idle' }
     };
     const s = map[discordStatus] || map.offline;
     statusPill.querySelector('.status-text').textContent = s.text;
