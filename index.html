@@ -787,7 +787,7 @@
   );
 
   /* ---------- discord bio ---------- */
-  const bioRaw = "尼好哇～\n我是 ᴋᴏᴜᴍɪᴏᴡᴏ\n偏害羞、內向 /_ \\\n熟了之後會比較放開一點\n平常大多時間都在潛水，比較少主動發言\n但還是很歡迎大家加我好友聊天\n||~~btw 可能需要你先開個話題ටաට~~||";
+  const bioRaw = "尼好哇～\n我是 ᴋᴏᴜᴍɪᴏᴡᴏ\n偏害羞、內向 /_ \\\n熟了之後會比較放開一點\n平常大多時間都在潛水，比較少主動發言\n但還是很歡迎大家加我好友聊天\n || ~~btw 可能需要你先開個話題ටաට~~ || ";
   document.getElementById('discordBio').innerHTML = mdParse(bioRaw);
 
   let copyDiscordCount = 0;
@@ -835,7 +835,7 @@
       dodgeBtn.style.left = Math.random() * maxX + 'px';
       dodgeBtn.style.top = Math.random() * maxY + 'px';
       playTone(600, 0.05);
-      if (dodges >= maxDodges) dodgeBtn.textContent = '好啦好啦，我不躲了 🏳️';
+      if (dodges >= maxDodges) dodgeBtn.textContent = '好啦好啦，我不躲了 (投降＞︿＜';
     });
   }
   dodgeBtn.addEventListener('click', (e) => {
@@ -1020,7 +1020,7 @@
     if (fdBusy) return;
     fdBusy = true;
     fakeDownloadBtn.disabled = true;
-    fakeDownloadBtn.textContent = '下載中... ▓▓▓░░░░░';
+    fakeDownloadBtn.textContent = '下載中... ❱❱❱❱';
     setTimeout(() => {
       fakeDownloadBtn.textContent = '才不給你下載咧 ᕕ( ᐛ )ᕗ';
       playTone(450, 0.08);
