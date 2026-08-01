@@ -1011,7 +1011,7 @@
     if (fdBusy) return;
     fdBusy = true;
     fakeDownloadBtn.disabled = true;
-    fakeDownloadBtn.textContent = '下載中... ❱❱❱❱';
+    fakeDownloadBtn.textContent = '下載中... ▰▰▰▰▰▰▰▰▱▱ 80% ';
     setTimeout(() => {
       fakeDownloadBtn.textContent = '才不給你下載咧 ᕕ( ᐛ )ᕗ';
       playTone(450, 0.08);
@@ -1061,7 +1061,7 @@
   const termLines = [
     { p: 'whoami', out: 'koumiowo' },
     { p: 'cat interests.txt', out: '電腦・軟體・硬體・各種資訊科技\n只要有趣都想玩玩看' },
-    { p: 'status', out: '潛水中 🐟（但歡迎打撈）' }
+    { p: 'status', out: '潛水ing ...' }
   ];
   const termBody = document.getElementById('termBody');
   function sleep(ms) { return new Promise(r => setTimeout(r, ms)); }
