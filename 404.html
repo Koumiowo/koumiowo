@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        /* 全域重設與方格背景 */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #faf8f7;
+            /* 繪製圖紙網格背景 */
+            background-image: 
+                linear-gradient(to right, rgba(230, 180, 180, 0.25) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(230, 180, 180, 0.25) 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+            padding: 20px;
+            color: #222;
+        }
+
+        /* 主容器 */
+        .error-container {
+            max-width: 620px;
+            width: 100%;
+            text-align: left;
+        }
+
+        /* 頂部文字: — ERROR CODE · 404 NOT FOUND */
+        .error-code-label {
+            color: #ff5035;
+            font-family: "Courier New", Courier, monospace, sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* 大數字 404 */
+        .error-title {
+            font-size: 130px;
+            font-weight: 900;
+            color: #ff5035;
+            line-height: 0.9;
+            margin-bottom: 25px;
+            letter-spacing: -2px;
+        }
+
+        /* 主標題: 欸？這個頁面 好像跑去玩了... */
+        .error-heading {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #0d0d0d;
+            line-height: 1.25;
+            margin-bottom: 25px;
+            word-break: keep-all;
+        }
+
+        /* 說明內文 */
+        .error-description {
+            font-size: 1.2rem;
+            color: #666666;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        /* 手機板微調 font-size */
+        @media (max-width: 480px) {
+            .error-title {
+                font-size: 90px;
+            }
+            .error-heading {
+                font-size: 2rem;
+            }
+            .error-description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-container">
+        <!-- 頂部標籤 -->
+        <div class="error-code-label">— ERROR CODE · 404 NOT FOUND</div>
+        
+        <!-- 404 大字 -->
+        <h1 class="error-title">404</h1>
+        
+        <!-- 標題 -->
+        <h2 class="error-heading">
+            欸？這個頁面<br>
+            好像跑去玩了...
+        </h2>
+        
+        <!-- 說明文字 -->
+        <p class="error-description">
+            你輸入的網址可能被酷米搬走了、刪除了，或是根本就不存在！要不要回主頁看看，或者試試抓抓看下面那個不乖的按鈕？
+        </p>
+    </div>
+
+</body>
+</html>
