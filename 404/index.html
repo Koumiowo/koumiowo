@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #faf8f7;
+            background-image: 
+                linear-gradient(to right, rgba(230, 180, 180, 0.25) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(230, 180, 180, 0.25) 1px, transparent 1px);
+            background-size: 20px 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+            padding: 20px;
+            color: #222;
+        }
+
+        .error-container {
+            max-width: 620px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .error-code-label {
+            color: #ff5035;
+            font-family: "Courier New", Courier, monospace, sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .error-title {
+            font-size: 130px;
+            font-weight: 900;
+            color: #ff5035;
+            line-height: 0.9;
+            margin-bottom: 25px;
+            letter-spacing: -2px;
+        }
+
+        .error-heading {
+            font-size: 2.8rem;
+            font-weight: 900;
+            color: #0d0d0d;
+            line-height: 1.25;
+            margin-bottom: 25px;
+            word-break: keep-all;
+        }
+
+        .error-description {
+            font-size: 1.2rem;
+            color: #666666;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+
+        @media (max-width: 480px) {
+            .error-title {
+                font-size: 90px;
+            }
+            .error-heading {
+                font-size: 2rem;
+            }
+            .error-description {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-container">
+        <div class="error-code-label">— ERROR CODE · 404 NOT FOUND</div>
+        <h1 class="error-title">404</h1>
+        <h2 class="error-heading">
+            欸？這個頁面<br>
+            好像跑去玩了...
+        </h2>
+        <p class="error-description">
+            你輸入的網址可能被酷米搬走了、刪除了，或是根本就不存在！要不要回主頁看看，或者試試抓抓看下面那個不乖的按鈕？
+        </p>
+    </div>
+
+</body>
+</html>
